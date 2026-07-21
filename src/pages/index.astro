@@ -25,6 +25,20 @@ const projects = [
         sourceURL: "#",
         demoURL: "https://visual-ed.vercel.app/",
     },
+    {
+        title: "DigiForum Component Library",
+        description:
+            "A simple component library made with NextJs, Tailwind CSS and Storybook",
+        year: "2023",
+        sourceURL: "https://github.com/JrFelix540/digi-forum",
+        demoURL: "https://65234a33d49753074afc5cec-kvffcoacar.chromatic.com/",
+    },
+    {
+        title: "Portfolio Website",
+        description: "This is what you're looking at :)",
+        year: "2023",
+        sourceURL: "https://github.com/JrFelix540/juniorfelix.com",
+    },
 ];
 ---
 
@@ -75,7 +89,7 @@ const projects = [
             {
                 recentPosts.map(({ slug, data }) => (
                     <Card
-                        href={`/posts/${slug}/`}
+                        href={`/home/posts/${slug}/`}
                         title={data.title}
                         pubDatetime={data.pubDatetime}
                         modDatetime={data.modDatetime}
